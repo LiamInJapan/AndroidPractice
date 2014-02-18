@@ -1,15 +1,15 @@
 package com.example.myfirstapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
@@ -19,9 +19,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 
