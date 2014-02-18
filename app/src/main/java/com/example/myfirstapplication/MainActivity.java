@@ -1,15 +1,15 @@
 package com.example.myfirstapplication;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
@@ -17,9 +17,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.news_articles);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 

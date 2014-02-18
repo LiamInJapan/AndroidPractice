@@ -3,16 +3,17 @@
     <!-- the theme applied to the application or activity -->
     <style name="CustomActionBarTheme"
         parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
         <item name="android:actionBarStyle">@style/MyActionBar</item>
-        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
         <item name="android:actionMenuTextColor">@color/lightcoral</item>
-        <item name="android:titleTextStyle">@style/MyActionBarTitle</item>
     </style>
 
     <!-- ActionBar styles -->
     <style name="MyActionBar"
         parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/orangered</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitle</item>
     </style>
 
     <style name="MyActionBarTabText"
@@ -22,6 +23,10 @@
 
     <style name="MyActionBarTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyActionBarTabs" parent="android:Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@color/lightsalmon</item>
     </style>
 
 </resources>
